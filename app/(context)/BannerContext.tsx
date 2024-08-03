@@ -1,11 +1,11 @@
 'use client';
 
 import React, { createContext, useContext, useState, ReactNode } from 'react';
-import banners from './data';
-
+import banners from '../data';
+import { BannerProps } from '../data';
 interface BannerContextType {
-  bannerList: any[];
-  updateBanner: (updatedBanner: any) => void;
+  bannerList: BannerProps[];
+  updateBanner: (updatedBanner: BannerProps) => void;
 }
 
 const BannerContext = createContext<BannerContextType | undefined>(undefined);
@@ -13,7 +13,7 @@ const BannerContext = createContext<BannerContextType | undefined>(undefined);
 export function BannerProvider({ children}: { children: ReactNode}) {
   const [bannerList, setBannerList] = useState(banners);
 
-  const updateBanner = (updatedBanner: any) => {
+  const updateBanner = (updatedBanner: BannerProps) => {
     setBannerList(prevList =>
       prevList.map(banner =>
         banner.id === updatedBanner.id ? updatedBanner : banner

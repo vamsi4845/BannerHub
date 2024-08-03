@@ -1,4 +1,21 @@
-const banners = [
+export interface BannerProps {
+  id: string;
+  template_url: string;
+  title: string;
+  description: string;
+  image_url: string;
+  buttonText: string;
+  styles: {
+    title: string;
+    description: string;
+    image: string;
+    footer: string;
+    button: string;
+  };
+}
+
+
+const banners: BannerProps[] = [
     {
       id: "1",
       title: "Authentic Japanese Cuisine",

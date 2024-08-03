@@ -7,6 +7,7 @@ const nextConfig = {
         ignoreDuringBuilds: true,
     },
     images: {
+        unoptimized: true,
         domains: ['bannerbot-public.s3.ap-south-1.amazonaws.com', 'images.unsplash.com'],
     },
 };

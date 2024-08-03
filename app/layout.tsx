@@ -3,7 +3,7 @@
 import { Manrope } from 'next/font/google'
 import { cn } from '@/lib/utils'
 import './globals.css'
-import { BannerProvider } from './BannerContext'
+import { BannerProvider } from './(context)/BannerContext'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
