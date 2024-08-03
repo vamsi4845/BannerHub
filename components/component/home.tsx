@@ -121,7 +121,7 @@ export function Home() {
                 <div className="flex flex-col items-start gap-2 rounded-lg bg-background p-6 shadow-sm">
                   <div className="flex items-center gap-2">
                     <Avatar>
-                      <AvatarImage src="/placeholder-user.jpg" />
+                      <AvatarImage src="" />
                       <AvatarFallback>JD</AvatarFallback>
                     </Avatar>
                     <div>
@@ -137,7 +137,7 @@ export function Home() {
                 <div className="flex flex-col items-start gap-2 rounded-lg bg-background p-6 shadow-sm">
                   <div className="flex items-center gap-2">
                     <Avatar>
-                      <AvatarImage src="/placeholder-user.jpg" />
+                      <AvatarImage src="" />
                       <AvatarFallback>JD</AvatarFallback>
                     </Avatar>
                     <div>
