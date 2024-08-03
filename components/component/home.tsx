@@ -25,6 +25,7 @@ To read more about using these font, please visit the Next.js documentation:
 **/
 import Link from "next/link"
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
+import Image from "next/image"
 
 export function Home() {
   return (
@@ -80,7 +81,7 @@ export function Home() {
                   </Link>
                 </div>
               </div>
-              <img
+              <Image
                 src="/hero.png"
                 width="550"
                 height="550"
@@ -174,7 +175,7 @@ export function Home() {
                   </p>
                 </div>
               </div>
-              <img
+              <Image
                 src="/testimonial.png"
                 width="550"
                 height="310"

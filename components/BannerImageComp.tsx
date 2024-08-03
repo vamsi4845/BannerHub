@@ -4,6 +4,7 @@ import { Button } from "./ui/button";
 import { Card, CardContent, CardFooter } from "./ui/card";
 import html2canvas from "html2canvas";
 import EditorBannerTemplateBS from "./EditorBannerTemplateBS";
+import Image from "next/image";
 
 interface Banner {
   id: string;
@@ -55,7 +56,7 @@ const BannerImageComp = forwardRef<BannerImageCompHandle, BannerImageCompProps>(
         <p className={banner.styles.description}>{banner.description}</p>
              <EditorBannerTemplateBS banner={banner}/>
         <div className={banner.styles.image}>
-          <img src={banner.image_url} alt="logo" className="w-full h-full object-cover" />
+          <Image width={550} height={320} src={banner.image_url} alt="logo" className="w-full h-full object-cover" />
         </div>
       </CardContent>
       <CardFooter className={banner.styles.footer}>

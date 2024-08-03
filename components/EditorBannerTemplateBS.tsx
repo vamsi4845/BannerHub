@@ -14,6 +14,7 @@ import banners from "@/app/data";
 import { useState, useRef } from "react";
 import { useBannerContext } from "@/app/BannerContext";
 import { DialogClose } from "@radix-ui/react-dialog";
+import Image from "next/image";
 
 export default function EditorBannerTemplateBS({ banner }: { banner: any }) {
   const [bannerData, setBannerData] = useState(banner);
@@ -86,10 +87,12 @@ export default function EditorBannerTemplateBS({ banner }: { banner: any }) {
                   key={banner.id}
                   className="w-12 h-12 rounded-full bg-gray-200 flex-shrink-0 overflow-hidden"
                 >
-                  <img
+                  <Image
                     onClick={handleChange}
                     src={banner.image_url}
                     alt={banner.title}
+                    width={120}
+                    height={120}
                     className="cursor-pointer"
                   />
                 </div>
