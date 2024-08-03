@@ -66,7 +66,7 @@ export default function EditorBannerTemplateBS({ banner }: { banner: any }) {
         className="absolute cursor-pointer text-gray-500 right-3 top-3 z-10"
         />  
       </DialogTrigger>
-      <DialogContent className="max-w-xl pl-4 h-full">
+      <DialogContent className="max-w-xl pl-3 h-full">
         <DialogHeader>
           <DialogTitle>
             Edit Banner
