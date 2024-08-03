@@ -78,7 +78,7 @@ export default function EditorBannerTemplateBS({ banner }: { banner: any }) {
           </div>
           <div>
             <p className="text-sm text-gray-500 mb-2">
-              Image Attribution: Photo by Xu <span className="underline">FlyD</span>&nbsp;on&nbsp;
+              Image Attribution: Photo by Xu <span className="underline">FlyD</span> on
               <span className="underline"> Unsplash </span>
             </p>
             <div className="flex gap-2 overflow-x-auto py-2">

@@ -4,6 +4,15 @@ import { Manrope } from 'next/font/google'
 import { cn } from '@/lib/utils'
 import './globals.css'
 import { BannerProvider } from './BannerContext'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Banner Hub',
+  description: 'Create stunning banners in minutes',
+  icons: {
+    icon: '/favicon.ico',
+  },
+}
 
 
 const fontHeading = Manrope({
