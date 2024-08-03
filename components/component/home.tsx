@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export function Home() {
   return (
-    <div className="flex flex-col min-h-[100dvh] bg-background">
+    <div className="flex flex-col min-h-[100dvh] bg-background scrollbar-thin scrollbar-thumb-muted scrollbar-track-transparent">
       <header className="px-4 lg:px-6 h-14 flex items-center">
         <Link href="#" className="flex items-center justify-center" prefetch={false}>
           <MountainIcon className="h-7 w-7"   />
