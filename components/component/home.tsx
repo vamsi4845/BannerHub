@@ -7,8 +7,8 @@ export function Home() {
     <div className="flex flex-col min-h-[100dvh] bg-background">
       <header className="px-4 lg:px-6 h-14 flex items-center">
         <Link href="#" className="flex items-center justify-center" prefetch={false}>
-          <MountainIcon className="h-6 w-6"   />
-          <span className="text-2xl font-bold tracking-tighter hidden md:block">  Banner Hub</span>
+          <MountainIcon className="h-7 w-7"   />
+          <span className="text-3xl font-bold tracking-tighter hidden md:block m-2">  Banner Hub</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <Link href="/dashboard" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
